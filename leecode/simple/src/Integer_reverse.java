@@ -60,7 +60,7 @@ public class Integer_reverse {
 
 
 
-        //直接使用对10取余的方法每次得到最后一位的数字；
+        //直接使用对10取余的方法每次得到最后
         if (x>=Integer.MAX_VALUE || x<=Integer.MIN_VALUE) return 0;
         int X = x;
         long reverX = 0;
