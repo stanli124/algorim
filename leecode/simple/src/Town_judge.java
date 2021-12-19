@@ -13,15 +13,15 @@ public class Town_judge {
 
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
-        int n = 4;
-        int[][] trust = {{1,3},{2,3},{1,4},{2,4},{4,3}};
+        int n = 1;
+        int[][] trust = {};
         System.out.println(findJudge(n, trust));
         long endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime + " ms");
     }
 
     public static int findJudge(int n, int[][] trust){
-        if (trust.length ==0 && n==1) return 1;
+//        if (trust.length ==0 && n==1) return 1;
 //        HashMap<Integer,Integer> firstNum = new HashMap<Integer,Integer>();
         HashSet<Integer> firstNum = new HashSet<>();
         HashMap<Integer,Integer> secondNum = new HashMap<Integer,Integer>();
