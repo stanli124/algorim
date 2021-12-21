@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Daliy_Question/Daliy_Question.iml" filepath="$PROJECT_DIR$/Daliy_Question/Daliy_Question.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data_Structure/Data_Structure.iml" filepath="$PROJECT_DIR$/Data_Structure/Data_Structure.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/leecode.iml" filepath="$PROJECT_DIR$/.idea/leecode.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple/simple.iml" filepath="$PROJECT_DIR$/simple/simple.iml" />
     </modules>
