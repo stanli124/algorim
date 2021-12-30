@@ -192,7 +192,7 @@ public class problem67 {
             if(i >= 0) c += a.charAt(i --) - '0';
             if(j >= 0) c += b.charAt(j --) - '0';
             stb.append(c % 2);
-            c >>= 1;
+            c >>= 1;   //相当于c/2
         }
 
         String res = stb.reverse().toString();
