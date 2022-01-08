@@ -20,17 +20,20 @@ public class problem {
 
         int len = nums.length;
         List<List<Integer>> all = new ArrayList<>();
+        if (len == 0) return all;
+        all.add(Arrays.asList(nums[0]));
 
-        for (int i = 0; i < len; i++) {
-            for (int j = 0; j < len-i; j++) {
-                ArrayList<Integer> one = new ArrayList<>();
-                for (int k = 0; k <=i ; k++) {
-                    one.add(nums[j+k]);
-                }
+        for (int i = 1; i < len; i++) {
+            int l_size = all.size();
+            for (int j = 0; j < l_size; j++) {  //遍历当前所有子集
+                ArrayList<Integer> one = new ArrayList<>(all.get(j));
+                one.add(nums[i]); //给每个子集都加上当前元素；
                 all.add(one);
             }
+            //加上当前元素
+            all.add(Arrays.asList(nums[i]));
         }
-
+        all.add(new ArrayList<>());
         return all;
 
     }
