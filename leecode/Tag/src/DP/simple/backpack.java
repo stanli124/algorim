@@ -3,12 +3,12 @@ package DP.simple;
 public class backpack {
 
     public static void main(String[] args) {
-        int[] weight = new int[]{1,3,4};
-        int[] value = new int[]{15,20,30};
-        int maxW = 10;
+        int[] weight = new int[]{2,3,4,5};
+        int[] value = new int[]{3,4,5,6};
+        int maxW = 8;
 
         backpack test = new backpack();
-        System.out.println(test.bag01(weight, value, maxW));
+        System.out.println(test.bag02(weight, value, maxW));
 
     }
 
@@ -44,5 +44,28 @@ public class backpack {
         return dp[nums-1][maxWeight];
 
     }
+
+    //一维dp数组解法
+    public int bag02(int[] w, int[] v, int maxWeight) {
+        int[] dp = new int[maxWeight+1];
+
+        //初始化；
+        for (int i = 1; i < maxWeight+1; i++) {
+            if (i >= w[0]) dp[i] = v[0]; //若当前背包重量能放得下第0个物品，那么当前背包重量的最大价值就第0个物品的价值
+        }
+
+        //不要初始化，i就从0下标开始
+        for (int i = 1; i < w.length; i++) { //i从第一个开始是因为，在初始化的时候以及计算了第0个物品的情况
+            for (int j = maxWeight; j >= w[i]; j--) { //倒序遍历不会把一个物品重复放背包
+                //如果当前背包承受重量 小于 当前要放入物品的重量，那么无法放入该物品就结束循环；因为是倒序，所以后面的也不可能放下
+                dp[j] = Math.max(dp[j], dp[j - w[i]]+v[i]);
+            }
+        }
+
+
+        return dp[maxWeight];
+    }
+
+
 
 }
