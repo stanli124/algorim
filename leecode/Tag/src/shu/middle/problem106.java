@@ -12,7 +12,7 @@ public class problem106 {
 
     }
 
-    public static TreeNode buildTree(int[] git inorder, int[] postorder) {
+    public static TreeNode buildTree(int[] inorder, int[] postorder) {
         TreeNode root = build(inorder, 0, inorder.length - 1,
                 postorder, 0, postorder.length-1);
         return root;
