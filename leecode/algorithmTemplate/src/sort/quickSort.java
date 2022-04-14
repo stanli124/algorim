@@ -25,7 +25,7 @@ public class quickSort {
         int pivot = subNums[low];  //也有暂存值的作用
         while (low < high)
         {
-            //一定要从右边开始找小于pivot的数，因为
+            //一定要从右边开始找小于pivot的数，因为high的值没有保存，一开始low的值保存在pivot中
             while (low < high && subNums[high]>=pivot) high--; //从右边找到第一个比p小的数
             subNums[low] = subNums[high];
             while (low < high && subNums[low]<=pivot) low++; //从左边找到第一个比p大的数
