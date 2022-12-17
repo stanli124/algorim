@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Data_Structure/Data_Structure.iml" filepath="$PROJECT_DIR$/Data_Structure/Data_Structure.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag/Tag.iml" filepath="$PROJECT_DIR$/Tag/Tag.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithmTemplate/algorithmTemplate.iml" filepath="$PROJECT_DIR$/algorithmTemplate/algorithmTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/designPatterns/designPatterns.iml" filepath="$PROJECT_DIR$/designPatterns/designPatterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/leecode.iml" filepath="$PROJECT_DIR$/.idea/leecode.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle.iml" filepath="$PROJECT_DIR$/middle/middle.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple/simple.iml" filepath="$PROJECT_DIR$/simple/simple.iml" />
