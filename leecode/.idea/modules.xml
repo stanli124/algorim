@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Daliy_Question/Daliy_Question.iml" filepath="$PROJECT_DIR$/Daliy_Question/Daliy_Question.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data_Structure/Data_Structure.iml" filepath="$PROJECT_DIR$/Data_Structure/Data_Structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HwOJ/HwOJ.iml" filepath="$PROJECT_DIR$/HwOJ/HwOJ.iml" />
       <module fileurl="file://$PROJECT_DIR$/JianZhiOffer/JianZhiOffer.iml" filepath="$PROJECT_DIR$/JianZhiOffer/JianZhiOffer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag/Tag.iml" filepath="$PROJECT_DIR$/Tag/Tag.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithmTemplate/algorithmTemplate.iml" filepath="$PROJECT_DIR$/algorithmTemplate/algorithmTemplate.iml" />
