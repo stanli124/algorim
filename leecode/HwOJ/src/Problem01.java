@@ -17,25 +17,28 @@ public class Problem01 {
         HashSet<String> set = new HashSet<>();
         for (int i = 0, j = 0; i < arrayA.length || j < arrayB.length; i++, j++) {
             if (i < arrayA.length) set.add(arrayA[i]);
-            if (j < arrayB.length) set.add(arrayB[i]);
+            if (j < arrayB.length) set.add(arrayB[j]);
         }
 
         String[] res = new String[set.size()];
         set.toArray(res);
 
         Arrays.sort(res, 0, res.length, (s1, s2) -> {
-            int length1 = s1.length();
-            int length2 = s2.length();
-            int i = 0, j = 0;
-            while (i++ < length1 && j++ < length2){
-                if (s1.charAt(i) - s2.charAt(j) > 0) return 1;
-                else if (s1.charAt(i) - s2.charAt(j) < 0) return -1;
-            }
+//            int length1 = s1.length();
+//            int length2 = s2.length();
+//            int i = 0, j = 0;
+//            while (i++ < length1 && j++ < length2) {
+//                if (s1.charAt(i) - s2.charAt(j) > 0) return 1;
+//                else if (s1.charAt(i) - s2.charAt(j) < 0) return -1;
+//            }
+//
+//            if (i < length1) return 1;
+//            if (j < length2) return -1;
+//
+//            return 0; //这里是i和j相等，也就是两个字符串相等的情况
+            int i = s1.compareTo(s2);
+            return i;
 
-            if (i < length1) return 1;
-            if (j < length2) return -1;
-
-            return 0; //这里是i和j相等，也就是两个字符串相等的情况
         });
 
         return res;
