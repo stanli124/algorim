@@ -36,7 +36,6 @@ public class Problem32ii {
                 res.add(new ArrayList<>(layer));
                 layer = new ArrayList<>();
             }
-
             return res;
         }
     }
