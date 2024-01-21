@@ -5,7 +5,7 @@
 
 package zifuchuan;
 
-import javax.jws.soap.SOAPBinding;
+//import javax.jws.soap.SOAPBinding;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
