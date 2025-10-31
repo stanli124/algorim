@@ -24,7 +24,7 @@ class TreeNode {
     }
 }
 
-class Solution {
+class ISolution2 {
     public TreeNode invertTree(TreeNode root) {
         if (root != null) {
             TreeNode left = root.left;

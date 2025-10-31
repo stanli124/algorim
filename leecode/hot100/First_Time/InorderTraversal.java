@@ -8,7 +8,7 @@ public class InorderTraversal {
 }
 
 
-class Solution {
+class ISolution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         inorder(root, res);
